@@ -215,7 +215,7 @@ export default function Speaker() {
 
           <div>
             <button type="submit" className='bg-[#c60e34] mt-10 mr-2' ref={submitButton}>Submit Application</button>
-            <button onClick={() => router.push('/')} className='bg-gray-600 hover:bg-gray-700'>Return home</button>
+            <button onClick={() => router.push('/')} className='bg-gray-600 hover:bg-gray-700 mt-2 md:mt-0'>Return home</button>
           </div>
 
           {(Object.keys(alert.props).length !== 0) && (
