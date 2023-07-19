@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "avoidEscape": 0,
+    "allowTemplateLiterals": 0
+ }
+}
