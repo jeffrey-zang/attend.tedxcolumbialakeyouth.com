@@ -83,7 +83,25 @@ export default function Speaker() {
     if (text === 'Email already exists') {
       setAlert(<div className='text-rose-300 flex items-center gap-2'><AiOutlineWarning/> This email has already been used. If this was a mistake, contact us at <a href='mailto:questions@tedxcolumbialakeyouth.com'>questions@tedxcolumbialakeyouth.com</a></div>);
     } else {
-      setAlert(<div className='text-green-300 flex items-center gap-2'><AiOutlineCheckCircle/> Your application has been submitted successfully! <Link href='/'>Return to the home page.</Link></div>);
+      setAlert(<div className='text-green-300 flex items-center gap-2'><AiOutlineCheckCircle/> Your application has been submitted successfully! <Link href='/' className='underline'>Return to the home page</Link> or <button className='no-styles underline' onClick={() => {
+        setFName('');
+        setLName('');
+        setEmail('');
+        setDob('');
+        setSchool('');
+        setSocials('');
+        setIdea('');
+        setOutline('');
+        setExp('');
+        setWhy('');
+        setAccomplishments('');
+        setVideo('');
+        setDoc('');
+        setInterest('');
+        setAif('');
+        setAlert(<></>);
+        submitButton.current.disabled = false;
+      }}>clear this form.</button></div>);
       submitButton.current.disabled = true;
     }
     setSubmittext('Submit Application')

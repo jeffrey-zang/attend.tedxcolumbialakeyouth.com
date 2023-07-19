@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-button {
+button:not(.no-styles) {
   background-color: #c60e34;
   color: #fff;
   padding: 8px 16px;
