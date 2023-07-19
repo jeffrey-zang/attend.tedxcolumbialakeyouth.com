@@ -28,12 +28,18 @@ export default function Speaker() {
   const router = useRouter()
 
   const submitButton = useRef(null);
+  const [submittext, setSubmittext] = useState('Submit Application');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setSubmittext('Working...')
+    submitButton.current.style.backgroundColor = '#4b5563'
+
     if (outline.length > 600 || why.length > 800 || accomplishments > 1200) {
       setAlert(<div className='text-rose-300 flex items-center gap-2'><AiOutlineWarning/> One or more of your responses exceeds the character limit. Please shorten your responses and try again.</div>);
+      setSubmittext('Submit Application')
+      submitButton.current.style.backgroundColor = '#c60e34'
       return
     }
 
@@ -66,6 +72,8 @@ export default function Speaker() {
 
     if (!res.ok) {
       setAlert(<div className='text-rose-300 flex items-center gap-2'><AiOutlineWarning/> An error occurred while submitting your application. Please try again later.</div>);
+      setSubmittext('Submit Application')
+      submitButton.current.style.backgroundColor = '#c60e34'
       return
     }
     
@@ -76,6 +84,8 @@ export default function Speaker() {
       setAlert(<div className='text-green-300 flex items-center gap-2'><AiOutlineCheckCircle/> Your application has been submitted successfully! <Link href='/'>Return to the home page.</Link></div>);
       submitButton.current.disabled = true;
     }
+    setSubmittext('Submit Application')
+    submitButton.current.style.backgroundColor = '#c60e34'
   }
 
   return (
@@ -214,7 +224,7 @@ export default function Speaker() {
           </div>
 
           <div>
-            <button type="submit" className='bg-[#c60e34] mt-10 mr-2' ref={submitButton}>Submit Application</button>
+            <button type="submit" className='bg-[#c60e34] mt-10 mr-2' ref={submitButton}>{submittext}</button>
             <button onClick={() => router.push('/')} className='bg-gray-600 hover:bg-gray-700 mt-2 md:mt-0'>Return home</button>
           </div>
 
