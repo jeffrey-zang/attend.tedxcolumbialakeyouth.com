@@ -121,7 +121,7 @@ export default function Attendee() {
 
           <div>
             <input className='mr-4 accent-red mt-4' value={student} onChange={e => {setStudent(e.target.checked)}} type="checkbox" checked={student} />
-            <label>I am a student</label>
+            <label onClick={() => setStudent(!student)} className='cursor-pointer'>I am a student</label>
           </div>
 
           {(student) ? (
