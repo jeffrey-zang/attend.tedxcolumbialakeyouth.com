@@ -159,7 +159,7 @@ export default function Speaker() {
 
           <div className='input-container'>
             <label>Socials (Instagram, LinkedIn, etc)</label>
-            <input value={socials} onChange={e => setSocials(e.target.value)} type="text" placeholder="https://www.linkedin.com/in/hooman-nezhad/" required />
+            <input value={socials} onChange={e => setSocials(e.target.value)} type="text" placeholder="https://www.linkedin.com/in/your-name/" required />
           </div>
         </div>
         
