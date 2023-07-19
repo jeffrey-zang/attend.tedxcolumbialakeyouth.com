@@ -143,13 +143,13 @@ export default function Attendee() {
           <h2 className='text-xl'>Application Essays</h2>
 
           <div className='input-container flex-col !mt-8 !items-start'>
-            <label className='!w-full'>With Artifical Intelligence quickly becoming a big part of our lives, many systems such as the workplace, healthcare, data storage, and law enforcement are changing. How do you think the education system should adapt or change? (600c)</label>
+            <label className='!w-full'>With Artifical Intelligence quickly becoming a big part of our lives, many systems such as the workplace, healthcare, data storage, and law enforcement are changing. How do you think the education system should adapt or change? (max. 600 characters)</label>
             <textarea className='!w-full mt-2' value={appq1} onChange={e => setAppq1(e.target.value)} type="text" placeholder="I think that AI..." required />
             {(appq1.length > 600) && <p className='text-rose-300 opacity-80 mt-2'>Well darn... this response exceeds the limit of 600 characters.</p>}
           </div>
 
           <div className='input-container flex-col !mt-8 !items-start'>
-            <label className='!w-full'>Describe one subject that you are passionate about. What drives this passion? How do you continue to ignite your passion and learn about this subject? (800c)</label>
+            <label className='!w-full'>Describe one subject that you are passionate about. What drives this passion? How do you continue to ignite your passion and learn about this subject? (max. 800 characters)</label>
             <textarea className='!w-full mt-2' value={appq2} onChange={e => setAppq2(e.target.value)} type="text" placeholder="I'm passionate about..." required />
             {(appq2.length > 800) && <p className='text-rose-300 opacity-80 mt-2'>Oh no... this response exceeds the limit of 800 characters.</p>}
           </div>

@@ -9,6 +9,7 @@ export default function MyApp({ Component, pageProps }) {
         <title>Attend | TEDxColumbia Lake Youth</title>
         <meta name="description" content="Application portal for TEDxColumbia Lake Youth"></meta>
         <link rel="icon" href="/tedx.png" />
+        <meta name="viewport" content="initial-scale=1"></meta>
       </Head>
       <Component {...pageProps} />
     </Layout>

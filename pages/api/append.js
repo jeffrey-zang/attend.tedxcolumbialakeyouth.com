@@ -66,6 +66,7 @@ export default async function handler(req, res) {
           body.exp,
           body.why,
           body.accomplishments,
+          body.interest,
           body.video,
           body.doc,
           body.aif

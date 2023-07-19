@@ -20,6 +20,7 @@ export default function Speaker() {
   const [accomplishments, setAccomplishments] = useState('');
   const [video, setVideo] = useState('');
   const [doc, setDoc] = useState('');
+  const [interest, setInterest] = useState('');
 
   const [aif, setAif] = useState('');
 
@@ -56,6 +57,7 @@ export default function Speaker() {
       exp,
       why,
       accomplishments,
+      interest,
       video,
       doc,
       aif
@@ -193,23 +195,29 @@ export default function Speaker() {
           </div>
 
           <div className='input-container !items-start flex-col !mt-8'>
-            <label className='!w-full'>What is unique about your idea and why is it worth spreading? (800c)</label>
+            <label className='!w-full'>What is unique about your idea and why is it worth spreading? (max. 800 characters)</label>
             <textarea className='!w-full mt-2' value={why} onChange={e => setWhy(e.target.value)} type="text" placeholder="My idea is unique because..." required />
             {(why.length > 800) && <p className='text-rose-300 opacity-80 mt-2'>Oh no! this response exceeds the limit of 800 characters.</p>}
           </div>
 
           <div className='input-container !items-start flex-col !mt-8'>
-            <label className='!w-full'>What is your proudest accomplishment and why? (1200c)</label>
+            <label className='!w-full'>What is your proudest accomplishment and why? (max. 1200 characters)</label>
             <textarea className='!w-full mt-2' value={accomplishments} onChange={e => setAccomplishments(e.target.value)} type="text" placeholder="I have accomplished..." required />
             {(why.length > 1200) && <p className='text-rose-300 opacity-80 mt-2'>Aw, shucks! this response exceeds the limit of 1200 characters.</p>}
           </div>
+
+          <div className='input-container'>
+            <label>If you aren't selected as a speaker, would you still be interested in being present as an attendee? (Yes/No)</label>
+            <input value={interest} onChange={e => setInterest(e.target.value)} type="text" placeholder="Yes" />
+          </div>
+
         </div>
 
         <div className='container p-8 mt-6'>
           <h2 className='text-xl'>Video and Script Submission</h2>
 
           <div className='input-container flex-col !items-start'>
-            <label className='!w-full'>Record a video (1-3 minutes) presenting a short clip of your speech or outlining your idea so that we can see your communication style and personality. Your video submission will only be viewed by the TEDxColumbia Lake Youth organizational team, and will not be uploaded to any social media sites. <strong>Please submit a shared google drive link to your video.</strong></label>
+            <label className='!w-full'>Record a video (1-3 minutes) presenting a short clip of your speech or outlining your idea so that we can see your communication style and personality. Your video submission will only be viewed by the TED<sup>x</sup>Columbia Lake Youth organizational team, and will not be uploaded to any social media sites. <strong>Please submit a shared google drive link to your video.</strong></label>
             <input className='!w-full' value={video} onChange={e => setVideo(e.target.value)} type="url" placeholder="https://drive.google.com/file/d/19LT8yJ4VlOjzEwNms5EB0i-cmpsruxoD/view?usp=sharing" required />
           </div>
 
