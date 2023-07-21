@@ -153,7 +153,7 @@ export default function Speaker() {
 
           <p>Be sure to review the <a className='text-red' href='https://storage.ted.com/tedx/manuals/tedx_speaker_guide.pdf' target='_blank' rel='noreferrer'>TED<sup>x</sup> guidelines.</a></p><br/>
           This form does not autosave, so we recommend that you write your responses in a separate document and copy them over when you are ready to submit.<br/>
-          Looking for the <Link className='text-red' href='/apply/attendee'>attendee application?</Link>
+          Looking for the <Link className='text-red' href='/register/attendee'>attendee registration?</Link>
         </p>
       </div>
 

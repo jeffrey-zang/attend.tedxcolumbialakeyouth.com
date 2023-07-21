@@ -20,7 +20,7 @@ export default function Attendee() {
   const [alert, setAlert] = useState(<></>);
 
   const submitButton = useRef(null);
-  const [submittext, setSubmittext] = useState('Submit Application');
+  const [submittext, setSubmittext] = useState('Submit Form');
 
   const router = useRouter()
 
@@ -37,7 +37,7 @@ export default function Attendee() {
 
     if (appq1.length > 600 || appq2.length > 800) {
       setAlert(<div className='text-rose-300 flex items-center gap-2'><AiOutlineWarning/> One or more of your responses exceeds the character limit. Please shorten your responses and try again.</div>);
-      setSubmittext('Submit Application')
+      setSubmittext('Submit Form')
       submitButton.current.style.backgroundColor = '#c60e34'
       return
     }
@@ -67,8 +67,8 @@ export default function Attendee() {
     const text = await res.text();
 
     if (!res.ok) {
-      setAlert(<div className='text-rose-300 flex items-center gap-2'><AiOutlineWarning/> An error occurred while submitting your application. Please try again later or contact us at <a href='mailto:questions@tedxcolumbialakeyouth.com'>questions@tedxcolumbialakeyouth.com</a></div>);
-      setSubmittext('Submit Application')
+      setAlert(<div className='text-rose-300 flex items-center gap-2'><AiOutlineWarning/> An error occurred while submitting your form. Please try again later or contact us at <a href='mailto:questions@tedxcolumbialakeyouth.com'>questions@tedxcolumbialakeyouth.com</a></div>);
+      setSubmittext('Submit Form')
       submitButton.current.style.backgroundColor = '#c60e34'
       return;
     }
@@ -78,7 +78,7 @@ export default function Attendee() {
     } else {
       setAlert(
         <div className='text-green-300 flex items-center gap-2'>
-          <AiOutlineCheckCircle/> Your application has been submitted successfully! 
+          <AiOutlineCheckCircle/> Your registration has been submitted successfully! 
           <Link href='/' className='underline'>Return to the home page</Link> or 
           <button className='no-styles underline' onClick={() => {
             setFName('');
@@ -97,7 +97,7 @@ export default function Attendee() {
         </div>
       );
       submitButton.current.disabled = true;
-      setSubmittext('Submit Application')
+      setSubmittext('Submit Form')
       submitButton.current.style.backgroundColor = '#c60e34'
       }
     }
@@ -105,12 +105,12 @@ export default function Attendee() {
   return (
     <div>
       <div className='container p-8'>
-        <h1 className='text-2xl mt-2'>Attendee Application</h1>
+        <h1 className='text-2xl mt-2'>Attendee Registration</h1>
         <p className='mt-2 text-dimmed'>
-          Apply to be an attendee and contribute to our mission of reinventing education. This application is due on August 12, 2023, at 11:59 PM EST. Applications submitted after that point will not be considered. Please note that as a TED<sup>x</sup> Youth event, most attendees at TED<sup>x</sup>Columbia Lake Youth will be students and youth.
+          Register to be an attendee and contribute to our mission of reinventing education. This form is due on August 12, 2023, at 11:59 PM EST. Submissions after that point will not be considered. Please note that as a TED<sup>x</sup> Youth event, most attendees at TED<sup>x</sup>Columbia Lake Youth will be students and youth.
           <br/><br/>
           This form does not autosave, so we recommend that you write your responses in a separate document and copy them over when you are ready to submit.<br/>
-          Looking for the <Link className='text-red' href='/apply/speaker'>speaker application?</Link>
+          Looking for the <Link className='text-red' href='/register/speaker'>speaker application?</Link>
         </p>
       </div>
 
@@ -159,13 +159,13 @@ export default function Attendee() {
         </div>
 
         <div className='container p-8 mt-6'>
-          <h2 className='text-xl'>Application Essays</h2>
+          <h2 className='text-xl'>Long-Answer Question</h2>
 
-          <div className='input-container flex-col !mt-8 !items-start'>
+          {/* <div className='input-container flex-col !mt-8 !items-start'>
             <label className='!w-full'>With Artifical Intelligence quickly becoming a big part of our lives, many systems such as the workplace, healthcare, data storage, and law enforcement are changing. How do you think the education system should adapt or change? (max. 600 characters)</label>
             <textarea className='!w-full mt-2' value={appq1} onChange={e => setAppq1(e.target.value)} type="text" placeholder="I think that AI..." required />
             {(appq1.length > 600) && <p className='text-rose-300 opacity-80 mt-2'>Well darn... this response exceeds the limit of 600 characters.</p>}
-          </div>
+          </div> */}
 
           <div className='input-container flex-col !mt-8 !items-start'>
             <label className='!w-full'>Describe one subject that you are passionate about. What drives this passion? How do you continue to ignite your passion and learn about this subject? (max. 800 characters)</label>
