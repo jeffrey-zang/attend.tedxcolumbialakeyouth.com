@@ -118,7 +118,7 @@ export default function Speaker() {
           <br/><br/>
 
           <strong className='text-xl'>Details</strong><br/>
-          TEDxColumbia Lake Youth will be taking place on October 7th, 2023 in Waterloo, Ontario. There will be 4 adult speakers and 8 youth speakers. After recieving the submissions from this form, our team will select 8 applicants to be youth speakers at TED<sup>x</sup>Columbia Lake Youth.
+          TEDxColumbia Lake Youth will be taking place on October 14th, 2023 in Waterloo, Ontario. There will be 4 adult speakers and 8 youth speakers. After recieving the submissions from this form, our team will select 8 applicants to be youth speakers at TED<sup>x</sup>Columbia Lake Youth.
           <br/><br/>
 
           <strong className='text-xl'>Requirements for a TED talk</strong><br/>
