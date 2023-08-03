@@ -202,7 +202,7 @@ export default function Speaker() {
           </div>
 
           <div className='input-container flex !items-start flex-col !mt-8'>
-            <label className='!w-full'>Give a brief outline/summary of your talk and its connection to the event theme of &quot;Reinventing Education&quot;. (600c)</label>
+            <label className='!w-full'>Give a brief outline/summary of your talk and its connection to the event theme of &quot;Reinventing Education&quot;. (max. 600 characters ≈ 85-150 words)</label>
             <textarea className='!w-full mt-2' value={outline} onChange={e => setOutline(e.target.value)} type="text" placeholder="My talk will be about..." required />
             {(outline.length > 600) && <p className='text-rose-300 opacity-80 mt-2'>Whoops... this response exceeds the limit of 600 characters.</p>}
           </div>
@@ -213,13 +213,13 @@ export default function Speaker() {
           </div>
 
           <div className='input-container !items-start flex-col !mt-8'>
-            <label className='!w-full'>What is unique about your idea and why is it worth spreading? (max. 800 characters)</label>
+            <label className='!w-full'>What is unique about your idea and why is it worth spreading? (max. 800 characters ≈ 130-270 words)</label>
             <textarea className='!w-full mt-2' value={why} onChange={e => setWhy(e.target.value)} type="text" placeholder="My idea is unique because..." required />
             {(why.length > 800) && <p className='text-rose-300 opacity-80 mt-2'>Oh no! this response exceeds the limit of 800 characters.</p>}
           </div>
 
           <div className='input-container !items-start flex-col !mt-8'>
-            <label className='!w-full'>What is your proudest accomplishment and why? (max. 1200 characters)</label>
+            <label className='!w-full'>What is your proudest accomplishment and why? (max. 1200 characters ≈ 171-300 words)</label>
             <textarea className='!w-full mt-2' value={accomplishments} onChange={e => setAccomplishments(e.target.value)} type="text" placeholder="I have accomplished..." required />
             {(why.length > 1200) && <p className='text-rose-300 opacity-80 mt-2'>Aw, shucks! this response exceeds the limit of 1200 characters.</p>}
           </div>

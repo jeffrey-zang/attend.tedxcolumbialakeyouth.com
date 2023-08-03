@@ -168,7 +168,7 @@ export default function Attendee() {
           </div> */}
 
           <div className='input-container flex-col !mt-8 !items-start'>
-            <label className='!w-full'>Describe one subject that you are passionate about. What drives this passion? How do you continue to ignite your passion and learn about this subject? (max. 800 characters)</label>
+            <label className='!w-full'>Describe one subject that you are passionate about. What drives this passion? How do you continue to ignite your passion and learn about this subject? (max. 800 characters ≈ 130-270 words)</label>
             <textarea className='!w-full mt-2' value={appq2} onChange={e => setAppq2(e.target.value)} type="text" placeholder="I'm passionate about..." required />
             {(appq2.length > 800) && <p className='text-rose-300 opacity-80 mt-2'>Oh no... this response exceeds the limit of 800 characters.</p>}
           </div>
