@@ -148,7 +148,7 @@ export default function Speaker() {
           August 17, 2023 - First draft of speech due<br/>
           August 31, 2023 - Final draft of speech to be submitted <br/>
           September 23, 2023 - Practice rehearsal <br/>
-          October 7, 2023 - Present at TED<sup>x</sup>Columbia Lake Youth <br/>
+          October 14, 2023 - Present at TED<sup>x</sup>Columbia Lake Youth <br/>
           <br/><br/>
 
           <p>Be sure to review the <a className='text-red' href='https://storage.ted.com/tedx/manuals/tedx_speaker_guide.pdf' target='_blank' rel='noreferrer'>TED<sup>x</sup> guidelines.</a></p><br/>
