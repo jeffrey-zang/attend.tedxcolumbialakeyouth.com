@@ -146,7 +146,7 @@ export default function Speaker() {
           August 12, 2023 - Application to be a speaker for TED<sup>x</sup>Columbia Lake Youth due<br/><br/>
           <strong>If accepted</strong><br/>
           August 17, 2023 - First draft of speech due<br/>
-          August 31, 2023 - Final draft of speech to be submitted <br/>
+          September 12, 2023 - Final draft of speech to be submitted <br/>
           September 23, 2023 - Practice rehearsal <br/>
           October 14, 2023 - Present at TED<sup>x</sup>Columbia Lake Youth <br/>
           <br/><br/>
