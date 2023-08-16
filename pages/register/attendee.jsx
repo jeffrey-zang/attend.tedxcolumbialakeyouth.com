@@ -107,7 +107,7 @@ export default function Attendee() {
       <div className='container p-8'>
         <h1 className='text-2xl mt-2'>Attendee Registration</h1>
         <p className='mt-2 text-dimmed'>
-          Register to be an attendee and contribute to our mission of reinventing education. This form is due on August 12, 2023, at 11:59 PM EST. Submissions after that point will not be considered. Please note that as a TED<sup>x</sup> Youth event, most attendees at TED<sup>x</sup>Columbia Lake Youth will be students and youth.
+          Register to be an attendee and contribute to our mission of reinventing education. This form is due on August 20, 2023, at 11:59 PM EST. Submissions after that point will not be considered. Please note that as a TED<sup>x</sup> Youth event, most attendees at TED<sup>x</sup>Columbia Lake Youth will be students and youth.
           <br/><br/>
           This form does not autosave, so we recommend that you write your responses in a separate document and copy them over when you are ready to submit.<br/>
           Looking for the <Link className='text-red' href='/register/speaker'>speaker application?</Link>
