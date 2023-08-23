@@ -10,7 +10,7 @@ export default function Home() {
       <div onClick={() => router.push('/register/attendee')} className='p-10 container cursor-pointer opacity-100 hover:opacity-75 transition-opacity'>
         <div className='flex justify-between items-center md:flex-row flex-col'>
           <div>
-            <p className='text-dimmed'>EARLY DEADLINE AUG 20</p>
+            <p className='text-dimmed'>DEADLINE SEP 30</p>
             <h1 className='text-2xl mt-2'>Attendee Form</h1>
             <p className='mt-6'>Register to be an attendee and contribute to our mission of reinventing education.</p>
           </div>
