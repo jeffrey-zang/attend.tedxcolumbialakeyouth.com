@@ -5,7 +5,7 @@ export default function Footer() {
       <div className='text-dimmed flex gap-4'>
         <a href='https://www.tedxcolumbialakeyouth.com' target='_blank' rel='noreferrer'>Main Website</a>
         <a href='https://www.instagram.com/tedxcolumbialakeyouth/' target='_blank' rel='noreferrer'>Instagram</a>
-        <a href='mailto:questions@tedxcolumbialakeyouth.com'>Contact</a>
+        <a href='mailto:questions@tedxcolumbialakeyouth.com'>Contact Us</a>
       </div>
     </div>
   )

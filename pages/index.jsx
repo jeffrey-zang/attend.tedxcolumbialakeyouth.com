@@ -34,6 +34,20 @@ export default function Home() {
           </button>
         </div>
       </div>
+
+      <div onClick={() => router.push('/register/performance')} className='p-10 container cursor-pointer opacity-100 hover:opacity-75 transition-opacity mt-8'>
+        <div className='flex justify-between items-center md:flex-row flex-col'>
+          <div>
+            <p className='text-dimmed'>DEADLINE SEP 14</p>
+            <h1 className='text-2xl mt-2'>Performance Application</h1>
+            <p className='mt-6'>Want to express your art through a performance at our event? This form is for you!</p>
+          </div>
+          <button onClick={() => router.push('/register/performance')} className='flex items-center gap-1 text-lg hover:gap-3 mt-4 md:mt-0 w-full md:w-auto'>
+            I want to perform
+            <BiRightArrowAlt />
+          </button>
+        </div>
+      </div>
     </main>
   )
 }

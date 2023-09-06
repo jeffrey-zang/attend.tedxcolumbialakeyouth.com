@@ -25,10 +25,16 @@ export default async function handler(req, res) {
         spreadsheetId: process.env.SHEET_ID,
         range: `Speaker!E1:E1000`,
       });
+      const getRows3 = await service.spreadsheets.values.get({
+        spreadsheetId: process.env.SHEET_ID,
+        range: `Performance!E1:E1000`,
+      });
 
       const rows1 = getRows1.data.values
       const rows2 = getRows2.data.values
-      const rows = rows1.concat(rows2)
+      const rows3 = getRows3.data.values
+      let rows = rows1.concat(rows2)
+      rows.concat(rows3)
 
       for (let i = 0; i < rows.length; i++) {
         if (rows[i][0] === body.email) {
@@ -69,6 +75,21 @@ export default async function handler(req, res) {
           body.interest,
           body.video,
           body.doc,
+          body.aif
+        ]
+      } else if (body.type === 'Performance') {
+        values = [
+          timestamp,
+          body.type,
+          body.fName,
+          body.lName,
+          body.email,
+          body.dob,
+          body.school,
+          body.socials,
+          body.title,
+          body.idea,
+          body.video,
           body.aif
         ]
       }
