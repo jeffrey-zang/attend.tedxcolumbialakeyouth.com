@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Title from '../../components/title';
 import { useRouter } from 'next/router'
 
-export default function performance() {
+export default function Performance() {
   
   const [fName, setFName] = useState('');
   const [lName, setLName] = useState('');
