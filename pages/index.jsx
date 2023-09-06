@@ -24,7 +24,7 @@ export default function Home() {
       <div onClick={() => router.push('/register/speaker')} className='p-10 container cursor-pointer opacity-100 hover:opacity-75 transition-opacity mt-8'>
         <div className='flex justify-between items-center md:flex-row flex-col'>
           <div>
-            <p className='text-dimmed'>DUE AUG 20</p>
+            <p className='text-dimmed'>DEADLINE SEP 14</p>
             <h1 className='text-2xl mt-2'>Speaker Application</h1>
             <p className='mt-6'>Make a direct impact on the youth thinkers and innovators of the future.</p>
           </div>

@@ -143,11 +143,11 @@ export default function Speaker() {
           <br/><br/>
 
           <strong className='text-xl'>Timeline</strong><br/>
-          August 20, 2023 - Application to be a speaker for TED<sup>x</sup>Columbia Lake Youth due<br/><br/>
+          September 14, 2023 - Application to be a speaker for TED<sup>x</sup>Columbia Lake Youth due<br/><br/>
           <strong>If accepted</strong><br/>
-          September 4, 2023 - First draft of speech due<br/>
-          September 12, 2023 - Final draft of speech to be submitted <br/>
-          September 23, 2023 - Practice rehearsal <br/>
+          September 23, 2023 - First draft of speech due<br/>
+          September 27, 2023 - Final draft of speech to be submitted <br/>
+          September 30, 2023 - Practice rehearsal <br/>
           October 14, 2023 - Present at TED<sup>x</sup>Columbia Lake Youth <br/>
           <br/><br/>
 

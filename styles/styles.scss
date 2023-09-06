@@ -50,7 +50,7 @@ a:hover {
 }
 
 .container {
-  background-color: #1f2937;
+  background-color: lighten(#1f2937, 3%);
   border: 2px solid rgb(75, 85, 99);
   border-radius: 12px;
   margin-left: auto;
