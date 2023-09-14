@@ -110,7 +110,7 @@ export default function Attendee() {
           Register to be an attendee and contribute to our mission of reinventing education. This form is due on September 30, 2023, at 11:59 PM EST. Submissions after that point will not be considered. Please note that as a TED<sup>x</sup> Youth event, most attendees at TED<sup>x</sup>Columbia Lake Youth will be students and youth.
           <br/><br/>
           This form does not autosave, so we recommend that you write your responses in a separate document and copy them over when you are ready to submit.<br/>
-          Looking for the <Link className='text-red' href='/register/speaker'>speaker application?</Link>
+          {/* Looking for the <Link className='text-red' href='/register/speaker'>speaker application?</Link> */}
         </p>
       </div>
 
