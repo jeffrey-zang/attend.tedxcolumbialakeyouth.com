@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div onClick={() => router.push('/register/performance')} className='p-10 container cursor-pointer opacity-100 hover:opacity-75 transition-opacity mt-8'>
+      {/* <div onClick={() => router.push('/register/performance')} className='p-10 container cursor-pointer opacity-100 hover:opacity-75 transition-opacity mt-8'>
         <div className='flex justify-between items-center md:flex-row flex-col'>
           <div>
             <p className='text-dimmed'>DEADLINE SEP 14</p>
@@ -47,7 +47,7 @@ export default function Home() {
             <BiRightArrowAlt />
           </button>
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }
